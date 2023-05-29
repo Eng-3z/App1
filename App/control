@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test2_sql_f.ControlPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="1" CornerRadius="0">
+                <Label Text="control page" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand"  Margin="0,50,0,0" Padding="20">
+                    <Entry Placeholder="Number" x:Name="number"  HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                    <Entry Placeholder="Code" x:Name="code" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Button Text="Create" x:Name="create" Clicked="create_Clicked" HorizontalOptions="FillAndExpand" Padding="50" BackgroundColor="LightPink"/>
+                    <Button Text="update" x:Name="update" Clicked="update_Clicked" HorizontalOptions="FillAndExpand"  Padding="50" BackgroundColor="LightPink"/>
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Button Text="delete" x:Name="delete" Clicked="delete_Clicked" HorizontalOptions="FillAndExpand" Padding="50" BackgroundColor="LightPink"/>
+                    <Button Text="back" x:Name="back" Clicked="back_Clicked" HorizontalOptions="FillAndExpand"  Padding="50" BackgroundColor="LightPink"/>
+
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
