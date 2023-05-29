@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test2_sql_f.GalleryPage">
+    <CarouselPage.Children>
+        <ContentPage Title="car1">
+            <Image x:Name="car1"/>
+        </ContentPage>
+        <ContentPage Title="car2">
+            <Image x:Name="car2"/>
+        </ContentPage>
+        <ContentPage Title="car3">
+            <Image x:Name="car3"/>
+        </ContentPage>
+        <ContentPage Title="car4">
+            <Image x:Name="car4"/>
+        </ContentPage>
+        <ContentPage Title="back">
+            <Button Text="back" x:Name="back" Clicked="back_Clicked"/>
+        </ContentPage>
+    </CarouselPage.Children>
+</CarouselPage>
