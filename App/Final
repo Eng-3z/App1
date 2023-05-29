@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test2_sql_f.FinalPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="1" CornerRadius="0">
+                <Label Text="Final page" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <StackLayout Orientation="Horizontal"  Padding="10">
+                <Label Text="Number:" BackgroundColor="Yellow" HorizontalOptions="FillAndExpand"/>
+                <Label Text="--" x:Name="number_label" HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"  Padding="10">
+                <Label Text="code:     " BackgroundColor="Yellow" HorizontalOptions="FillAndExpand"/>
+                <Label Text="--" x:Name="code_label" HorizontalOptions="StartAndExpand"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                <Button Text="COTROL PAGE" x:Name="controlpage" Clicked="controlpage_Clicked" BackgroundColor="Orange" HorizontalOptions="FillAndExpand"/>
+                <Button Text="Logout" x:Name="logout" Clicked="logout_Clicked" BackgroundColor="Orange" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="FillAndExpand" BackgroundColor="LightPink">
+                <StackLayout BackgroundColor="Black" HorizontalOptions="Center" Margin="0,10,0,0">
+                    <Button Text="All info" x:Name="allinfo" Clicked="allinfo_Clicked" BackgroundColor="Green" TextColor="White" FontSize="15" Margin="10"/>
+                </StackLayout>
+                <StackLayout Orientation="Horizontal" Margin="10"  BackgroundColor="White">
+
+                    <ListView x:Name="myListView" HasUnevenRows="True" >
+
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <StackLayout Orientation="Horizontal">
+
+                                        <Label Text="{Binding UID}"/>
+                                        <Label Text="number:"/>
+
+                                        <Label Text="{Binding Number}"/>
+                                        <Label Text="code:"/>
+
+                                        <Label Text="{Binding Code}"/>
+
+
+
+
+                                    </StackLayout>
+                                </ViewCell>
+
+
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
