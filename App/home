@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="test2_sql_f.HomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="1" CornerRadius="0">
+                <Label Text="Home page" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <StackLayout>
+                <Grid>
+                    <Grid.RowDefinitions >
+                        <RowDefinition Height="150" />
+                        <RowDefinition Height="150"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions >
+                        <ColumnDefinition Width="150"/>
+                        <ColumnDefinition Width="150"/>
+                    </Grid.ColumnDefinitions>
+                    <ImageButton Source="Assets/login.png" Grid.Column="0" Grid.Row="0" WidthRequest="50" x:Name="login_btn" Clicked="login_btn_Clicked"/>
+                    <ImageButton Source="Assets/cntrol.png" Grid.Column="1" Grid.Row="0" x:Name="cntrol_btn" Clicked="cntrol_btn_Clicked"/>
+                    <ImageButton Source="Assets/gallrey.png" Grid.Column="0" Grid.Row="1" x:Name="gallrey_btn" Clicked="gallrey_btn_Clicked"/>
+                    <ImageButton Source="Assets/close.png" Grid.Column="1" Grid.Row="1" x:Name="close_btn" Clicked="close_btn_Clicked"/>
+
+
+
+                </Grid>
+                <Label Text="Abdulaziz" BackgroundColor="#2196F3" HorizontalTextAlignment="Center" TextColor="Black" FontSize="50"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
